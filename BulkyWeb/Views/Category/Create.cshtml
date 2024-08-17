@@ -7,22 +7,20 @@
             <hr />
         </div>
 
-        <div class="mb-3 row">
-            <label>Category Name</label>
+        <div class="mb-3 row p-1">
+            <label class="p-0">Category Name</label>
             <input type="text" class="form-control" />
         </div>
 
-        <div class="mb-3 row">
+        <div class="mb-3 row p-1">
             <label>Display Order</label>
             <input type="text" class="form-control" />
         </div>
-    </div>
-
-    <div class="row py-2">
-        <div class="col-6">
+        <div class="row py-2">
+        <div class="col-6 col-md-3">
             <button type="submit" class="btn btn-primary form-control">Create</button>
         </div>
-        <div class="col-6">
+        <div class="col-6 col-md-3">
             <a asp-controller="Category" asp-action="Index" class="btn btn-secondary border form-control">
                 Back to List
             </a>
