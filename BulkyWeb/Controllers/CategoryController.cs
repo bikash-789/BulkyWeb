@@ -20,5 +20,25 @@ namespace BulkyWeb.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Create(Category obj)
+        {
+            // Custom Validation with custom error message
+            // if(obj.Name.ToLower() == obj.DisplayOrder.ToString())
+            // {
+            //     ModelState.AddModelError("name", "Display Order and Category Name cannot have same value");
+            // }
+            // if(obj.Name != null && obj.Name == "test")
+            // {
+            //     ModelState.AddModelError("", "Test is an Invalid value");
+            // }
+            if(ModelState.IsValid)
+            {
+                _db.Categories.Add(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }
