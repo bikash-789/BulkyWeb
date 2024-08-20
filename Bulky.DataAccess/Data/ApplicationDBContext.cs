@@ -1,16 +1,12 @@
 using System;
-using BulkyWeb.Models;
 using Microsoft.EntityFrameworkCore;
+using Bulky.Models;
 
-namespace BulkyWeb.Data;
+namespace Bulky.DataAccess.Data;
 
 // Anything we want to do with database goes here
-public class ApplicationDBContext : DbContext
+public class ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : DbContext(options)
 {
-    public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
-    {
-        
-    }
     // will create Table with name 'Categories' in database    
     public DbSet<Category> Categories { get; set; }
 

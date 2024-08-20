@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyWeb", "BulkyWeb\BulkyWeb.csproj", "{2876950A-5195-47BD-81C6-C420FD10930E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.DataAccess", "Bulky.DataAccess\Bulky.DataAccess.csproj", "{607B0532-F9E4-4134-94D0-50508C541CB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.Models", "Bulky.Models\Bulky.Models.csproj", "{580BCD42-117C-4F32-9397-A930421BD42B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.Utility", "Bulky.Utility\Bulky.Utility.csproj", "{0289DE83-5DF2-46EA-A95F-13C334583706}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{2876950A-5195-47BD-81C6-C420FD10930E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2876950A-5195-47BD-81C6-C420FD10930E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2876950A-5195-47BD-81C6-C420FD10930E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607B0532-F9E4-4134-94D0-50508C541CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607B0532-F9E4-4134-94D0-50508C541CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607B0532-F9E4-4134-94D0-50508C541CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607B0532-F9E4-4134-94D0-50508C541CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{580BCD42-117C-4F32-9397-A930421BD42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{580BCD42-117C-4F32-9397-A930421BD42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{580BCD42-117C-4F32-9397-A930421BD42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{580BCD42-117C-4F32-9397-A930421BD42B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0289DE83-5DF2-46EA-A95F-13C334583706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0289DE83-5DF2-46EA-A95F-13C334583706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0289DE83-5DF2-46EA-A95F-13C334583706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0289DE83-5DF2-46EA-A95F-13C334583706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

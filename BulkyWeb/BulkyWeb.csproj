@@ -24,4 +24,9 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="127.0.6533.11900" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bulky.Models\Bulky.Models.csproj" />
+    <ProjectReference Include="..\Bulky.DataAccess\Bulky.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>
