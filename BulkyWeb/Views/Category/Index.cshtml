@@ -20,17 +20,20 @@
         </div>
         <table class="table table-bordered table-striped">
     <thead>
-        <th>
+        <th class="text-center">
             Category Name
         </th>
-        <th>
+        <th class="text-center">
             Display Order
+        </th>
+        <th class="text-center">
+            Actions
         </th>
     </thead>
     <tbody>
         @foreach(var obj in Model.OrderBy(u=>u.DisplayOrder))
         {
-            <tr>
+            <tr class="table-light text-center">
                 <td>@obj.Name</td>
                 <td>@obj.DisplayOrder</td>
                 <td>
