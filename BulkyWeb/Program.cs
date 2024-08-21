@@ -1,4 +1,6 @@
 using Bulky.DataAccess.Data;
+using Bulky.DataAccess.Repository;
+using Bulky.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +13,8 @@ builder.Configuration["ConnectionStrings:DefaultConnection"] = connectionString;
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+// registering the service
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
