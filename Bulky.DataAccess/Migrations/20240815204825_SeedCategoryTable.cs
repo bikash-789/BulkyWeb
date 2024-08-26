@@ -14,7 +14,7 @@ namespace Bulky.DataAccess.Migrations
         {
             migrationBuilder.InsertData(
                 table: "Categories",
-                columns: new[] { "Id", "DisplayOrder", "Name" },
+                columns: ["Id", "DisplayOrder", "Name"],
                 values: new object[,]
                 {
                     { 1, 1, "Action" },
