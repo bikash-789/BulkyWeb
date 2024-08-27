@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/BulkyWeb.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.4/css/dataTables.dataTables.css" />
 </head>
 
 <body>
@@ -54,13 +55,17 @@
     </div>
 
     @* <footer class="border-top footer text-muted bg-dark mb-0">
-        <div class="container text-center text-white">
-            Made with <i class="bi bi-heart-fill"></i> by Bikash Chauhan
-        </div>
+    <div class="container text-center text-white">
+    Made with <i class="bi bi-heart-fill"></i> by Bikash Chauhan
+    </div>
     </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/2.1.4/js/dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tiny.cloud/1/0sgpn08duqugal4vgg7851qiv1yh6u802eanaqodqc3ipnuq/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
