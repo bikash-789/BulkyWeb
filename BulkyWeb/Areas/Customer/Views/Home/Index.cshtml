@@ -9,11 +9,12 @@
             </div>
             <div class="card-body px-2 py-2">
                 <h4 class="card-title">@product.Title</h4>
+                <p class="h6 text-info">by @product.Author</p>
                 <span class="badge bg-light text-decoration-line-through">Price: @product.ListPrice.ToString("c")</span>
                 <br/>
                 <span class="badge bg-success">@product.Price100.ToString("c")</span>
                 <br/>
-                <button type="button" class="btn btn-primary mt-2" style="width: 100%;">DETAILS</button>
+                <a asp-action="Details" asp-route-productId="@product.Id" type="button" class="btn btn-primary mt-2" style="width: 100%; font-size: small;">DETAILS</a>
             </div>
         </div>
     }
