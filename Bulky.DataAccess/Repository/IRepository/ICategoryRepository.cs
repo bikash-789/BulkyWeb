@@ -1,4 +1,3 @@
-using System;
 using Bulky.Models;
 
 namespace Bulky.DataAccess.Repository.IRepository;

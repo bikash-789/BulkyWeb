@@ -1,4 +1,3 @@
-using System;
 using Bulky.DataAccess.Data;
 using Bulky.DataAccess.Repository.IRepository;
 
