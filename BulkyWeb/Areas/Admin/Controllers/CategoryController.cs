@@ -1,6 +1,3 @@
-using System.Data.Common;
-using Bulky.DataAccess.Data;
-using Bulky.DataAccess.Repository;
 using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -12,7 +9,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
 
-        // GET: CategoryController
+        // GET
         public IActionResult Index()
         {
             List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
@@ -24,7 +21,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             return View();
         }
 
-        // CREATE METHOD
+        // CREATE
         [HttpPost]
         public IActionResult Create(Category obj)
         {
@@ -47,7 +44,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             return View();
         }
 
-        // PUT METHOD
+        // PUT
         public IActionResult Edit(int? id)
         {
             if(id == null || id == 0) return NotFound();
@@ -71,7 +68,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             return View();
         }
 
-        // DELETE METHOD
+        // DELETE
         public IActionResult Delete(int? id)
         {
             if(id == null || id == 0) return NotFound();
